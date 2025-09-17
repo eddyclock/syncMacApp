@@ -1,16 +1,16 @@
-# syncMacApp
+# synMacApp
 A Private Cross-Network File Synchronization Engine
 
 ## Introduction
-synMac is a robust, self-hosted file synchronization solution designed to keep folders consistent across multiple macOS devices (such as a MacBook and an iMac) that are not on the same local network. It operates on a client-server model, using a central Django-powered server as a trusted bridge for communication. This architecture provides a private, secure, and highly customizable alternative to commercial cloud storage services, giving users full control over their data and synchronization logic.
+synMacApp is a robust, self-hosted file synchronization solution designed to keep folders consistent across multiple macOS devices (such as a MacBook and an iMac) that are not on the same local network. It operates on a client-server model, using a central Django-powered server as a trusted bridge for communication. This architecture provides a private, secure, and highly customizable alternative to commercial cloud storage services, giving users full control over their data and synchronization logic.
 The system is composed of two main parts:
 A lightweight Python client that runs on each Mac, monitoring a designated folder for changes.
 A powerful Django web server deployed on a Linux environment (e.g., Ubuntu), which provides a RESTful API for clients to register, upload, download, and manage file metadata.
-By leveraging a centralized server, synMac ensures that file updates, additions, and deletions are reliably propagated to all registered devices, maintaining a single source of truth for the synchronized folder.
+By leveraging a centralized server, synMacApp ensures that file updates, additions, and deletions are reliably propagated to all registered devices, maintaining a single source of truth for the synchronized folder.
 
 
 ## Core Functions & Key Benefits
-Here are the primary functions of the synMac system and the significant benefits they provide:
+Here are the primary functions of the synMacApp system and the significant benefits they provide:
 
 1. Secure Client Registration & Authentication
 Description: Before a device can participate in the synchronization process, it must be registered with the server. This one-time process generates a unique API Key for the client, which must be included in all subsequent API requests. The server validates this key for every operation, ensuring that only authorized devices can access the file repository.
